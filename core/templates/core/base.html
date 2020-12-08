@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#3ed2a7">
+	{% load static %}
+	<link rel="shortcut icon" href="{% static 'core/assets/favicon.png'%}" />
+	<title>DUOC GYM | {% block title %}{% endblock %}</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'core/assets/vendors/liquid-icon/liquid-icon.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'core/assets/vendors/font-awesome/css/font-awesome.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'core/assets/css/theme-vendors.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'core/assets/css/liquid-events-table.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'core/assets/css/theme.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'core/assets/css/themes/gym.css' %}" />
+	<script async src="{% static 'core/assets/vendors/modernizr.min.js' %}"></script>
+</head>
+
+<body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="center" data-mobile-nav-style="minimal" data-mobile-nav-scheme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+	
+	<div id="wrap">
+		<header class="main-header main-header-overlay" data-react-to-megamenu="true">
+			<div class="mainbar-wrap">
+				<span class="megamenu-hover-bg"></span>
+				<div class="container-fluid mainbar-container">
+					<div class="mainbar">
+						<div class="row mainbar-row align-items-lg-stretch px-4">
+							<div class="col-auto">
+								<div class="navbar-header">
+									<a class="navbar-brand pr-4" href="index-gym.html" rel="home">
+										<span class="navbar-brand-inner">
+											<img class="logo-dark" src="./assets/img/logo/logo-1.svg" alt="Ave HTML Template">
+											<img class="logo-sticky" src="./assets/img/logo/logo-1.svg" alt="Ave HTML Template">
+											<img class="mobile-logo-default" src="./assets/img/logo/logo-1.svg" alt="Ave HTML Template">
+											<img class="logo-default" src="./assets/img/logo/logo-light.svg" alt="Ave HTML Template">
+										</span>
+									</a>
+									<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
+										<span class="sr-only">Toggle navigation</span>
+										<span class="bars">
+											<span class="bar"></span>
+											<span class="bar"></span>
+											<span class="bar"></span>
+										</span>
+									</button>
+								</div><!-- /.navbar-header -->
+								<div class="collapse navbar-collapse" id="main-header-collapse">
+									<ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-end" data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }'>
+										<li>
+											<a href="index.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">Inicio
+													<span class="submenu-expander">
+														<i class="fa fa-angle-down"></i>
+													</span>
+													</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="clases.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">Clases
+													<span class="submenu-expander">
+														<i class="fa fa-angle-down"></i>
+													</span>
+													</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="servicios.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">Servicios
+													<span class="submenu-expander">
+														<i class="fa fa-angle-down"></i>
+													</span>
+													</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="instructores.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">Instructores
+													<span class="submenu-expander">
+														<i class="fa fa-angle-down"></i>
+													</span>
+													</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="contacto.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">Contacto
+													<span class="submenu-expander">
+														<i class="fa fa-angle-down"></i>
+													</span>
+													</span>
+												</span>
+											</a>
+										</li>
+									</ul><!-- /#primary-nav  -->
+								</div><!-- /#main-header-collapse -->
+							</div><!-- /.col -->
+							<div class="col text-right">
+								<div class="header-module ml-5">
+									<a href="#" target="_blank" class="btn btn-default text-uppercase btn-bordered border-thick btn-gradient font-size-13 font-weight-semibold ltr-sp-1">
+										<span>
+											<span class="btn-txt">Llámanos!</span>
+											<span class="btn-gradient-bg btn-gradient-bg-hover"></span>
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="btn-gradient-border" width="100%" height="100%"> <defs> <linearGradient id="svg-border-5ca1dca53cd21" x1="0%" y1="0%" x2="100%" y2="0%"> <stop offset="0%" style="stop-color: rgb(245, 99, 75) !important;"></stop> <stop offset="100%" style="stop-color: rgb(254, 148, 24) !important;"></stop> </linearGradient> </defs> <rect x="0.5" y="0.5" rx="0" ry="0" width="100%" height="100%" stroke="url(#svg-border-5ca1dca53cd21)"> </rect> </svg>
+										</span>
+									</a>
+								</div><!-- /.header-module -->
+							</div><!-- /.col -->
+						</div><!-- /.mainbar-row -->
+					</div><!-- /.mainbar -->
+				</div><!-- /.mainbar-container -->
+			</div><!-- /.mainbar-wrap -->
+		</header><!-- /.main-header -->
+
+		<main id="content" class="content">
+            
+		</main>
+		
+		<footer class="main-footer pt-80">
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="lqd-column col-md-3 col-sm-6">
+							
+							<h3 class="widget-title text-white font-size-18 font-weight-bold text-uppercase">MENÚ</h3>
+							<ul class="lqd-custom-menu reset-ul text-white lh-2">
+								<li><a href="#">Inicio</a></li>
+								<li><a href="#">Clases</a></li>
+								<li><a href="#">Servicios</a></li>
+								<li><a href="#">Instructores</a></li>
+								<li><a href="#">Contacto</a></li>
+							</ul>
+						</div><!-- /.col-md-3 col-sm-6 -->
+						<div class="lqd-column col-md-5 col-sm-6">
+							<h3 class="widget-title text-white font-size-18 font-weight-bold text-uppercase">Ubicación</h3>
+							<div class="liquid-twitter-feed">
+								<ul class="liquid-twitter-feed-list">
+									<li>
+										<blockquote class="twitter-tweet" data-cards="hidden">
+											<p lang="en" dir="ltr">Avenida Vicuña Mackenna 4917<br>San Joaquín</p><br><p><a class="" href="https://goo.gl/maps/vtPG53aFrqGGFSNL6" target="_blank">Cómo Llegar</a></p>
+										</blockquote>
+									</li>
+								</ul>
+							</div><!-- /.liquid-twitter-feed -->
+						</div><!-- /.col-md-5 col-sm-6 -->
+						<div class="lqd-column col-md-3 col-sm-6 col-md-offset-1">
+							<h3 class="widget-title text-white font-size-18 font-weight-bold text-uppercase">NEWSLETTER</h3>
+							<div class="ld-sf ld-sf--input-solid ld-sf--button-solid ld-sf--size-sm ld-sf--sharp ld-sf--border-thin ld-sf--button-show ld-sf--button-block">
+								<form id="ld_subscribe_form" class="ld_sf_form" action="https://liquid-themes.us20.list-manage.com/subscribe/post?u=7f582d555cef808a99ea001a7&amp;id=58ab120d89" name="mc-embedded-subscribe-form" method="post">
+									<p class="ld_sf_paragraph pr-2">
+										<input class="bg-fade-white-005 text-white" type="email" class="ld_sf_text" id="mce-EMAIL" name="EMAIL" placeholder="Correo Electrónico" value="">
+									</p>
+									<button type="submit" class="ld_sf_submit px-4">
+										<span class="submit-text">Suscribirse</span>
+										<span class="ld-sf-spinner">
+											<span>Sending </span>
+										</span>
+									</button>
+								</form>
+								<div class="ld_sf_response"></div>
+							</div><!-- /.ld-sf -->
+						</div><!-- /.col-md-3 col-sm-6 -->
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+			
+			<section class="bg-fade-dark-05 pt-35 pb-35 mt-65">
+				<div class="container">
+					<div class="row d-flex flex-wrap align-items-center">
+						<div class="lqd-column col-md-6 col-xs-12 mb-4 mb-md-0">
+							<figure>
+								<img src="./assets/img/logo/logo-light.svg" alt="Ave">
+							</figure>
+						</div><!-- /.col-md-6 -->
+						<div class="lqd-column col-md-6 col-xs-12 text-md-right">
+							<ul class="social-icon social-icon-md">
+								<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div><!-- /.col-md-6 text-md-right -->
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+		</footer><!-- /.main-footer -->
+	</div><!-- /#wrap -->
+<!--<script src="//maps.googleapis.com/maps/api/js?key={YOUR_API_KEY}"></script>-->
+<script src="{% static 'core/assets/vendors/jquery.min.js' %}"></script>
+<script src="{% static 'core/assets/js/theme-vendors.js' %}"></script>
+<script src="{% static 'core/assets/js/theme.min.js' %}"></script>
+<script src="{% static 'core/assets/js/liquidEventsTable.min.js' %}"></script>
+<script src="{% static 'core/assets/js/liquidAjaxContactForm.min.js' %}"></script>
+<script src="{% static 'core/assets/js/liquidAjaxMailchimp.min.js' %}"></script>
+</body>
+</html>
