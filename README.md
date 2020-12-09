@@ -22,9 +22,9 @@ Integrantes:
 ```bash
 cd venv/venv01/Scripts/
 activate
-cd..
-cd..
+
 cd projects/duoc_2020_django/
+
 python manage.py runserver
 ```
 
@@ -32,9 +32,9 @@ python manage.py runserver
 
 ```bash
 source venv/venv01/bin/activate
-cd ..
-cd ..
+
 cd projects/duoc_2020_django/
+
 python3 manage.py runserver
 ```
 
