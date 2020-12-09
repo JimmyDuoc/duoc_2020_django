@@ -29,12 +29,12 @@
 						<div class="row mainbar-row align-items-lg-stretch px-4">
 							<div class="col-auto">
 								<div class="navbar-header">
-									<a class="navbar-brand pr-4" href="index-gym.html" rel="home">
+									<a class="navbar-brand pr-4" href="{% url 'inicio' %}" rel="home">
 										<span class="navbar-brand-inner">
-											<img class="logo-dark" src="./assets/img/logo/logo-1.svg" alt="Ave HTML Template">
-											<img class="logo-sticky" src="./assets/img/logo/logo-1.svg" alt="Ave HTML Template">
-											<img class="mobile-logo-default" src="./assets/img/logo/logo-1.svg" alt="Ave HTML Template">
-											<img class="logo-default" src="./assets/img/logo/logo-light.svg" alt="Ave HTML Template">
+											<img class="logo-dark" src="{% static 'core/assets/img/logo/logo-1.svg' %}">
+											<img class="logo-sticky" src="{% static 'core/assets/img/logo/logo-1.svg' %}">
+											<img class="mobile-logo-default" src="{% static 'core/assets/img/logo/logo-1.svg' %}">
+											<img class="logo-default" src="{% static 'core/assets/img/logo/logo-light.svg' %}">
 										</span>
 									</a>
 									<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
@@ -241,7 +241,7 @@
 					<div class="row d-flex flex-wrap align-items-center">
 						<div class="lqd-column col-md-6 col-xs-12 mb-4 mb-md-0">
 							<figure>
-								<img src="./assets/img/logo/logo-light.svg" alt="Ave">
+								<img src="{% static 'core/assets/img/logo/logo-light.svg' %}" alt="Ave">
 							</figure>
 						</div><!-- /.col-md-6 -->
 						<div class="lqd-column col-md-6 col-xs-12 text-md-right">
