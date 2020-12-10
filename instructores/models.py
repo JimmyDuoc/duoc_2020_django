@@ -4,7 +4,7 @@ from django.db import models
 
 class Instructor(models.Model):
     name = models.CharField(max_length = 100, verbose_name = "Nombre")
-    image = models.ImageField(verbose_name = "Imagen")
+    image = models.ImageField(verbose_name = "Imagen",upload_to="instructor")
     specialty = models.CharField(max_length = 100, verbose_name = "Especialidad")
     experience = models.TextField(verbose_name = "Experiencia")
     facebook = models.CharField(max_length = 100, verbose_name = "Facebook")
