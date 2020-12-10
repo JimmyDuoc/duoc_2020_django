@@ -9,7 +9,6 @@ class Clase(models.Model):
     created = models.DateTimeField(auto_now_add = True, verbose_name= "Fecha Creación")
     updated = models.DateTimeField(auto_now = True, verbose_name= "Fecha Modificación")
     
-
 class Meta:
     verbose_name = "clase"
     verbose_name_plural = "clases"
