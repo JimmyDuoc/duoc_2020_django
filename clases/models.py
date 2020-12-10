@@ -10,3 +10,10 @@ class Clase(models.Model):
     updated = models.DateTimeField(auto_now = True, verbose_name= "Fecha Modificación")
     
 
+class Meta:
+    verbose_name = "clase"
+    verbose_name_plural = "clases"
+    ordering = ['-updated','-created']
+
+def __str__(self):
+    return self.title
