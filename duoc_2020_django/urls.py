@@ -18,12 +18,15 @@ from django.urls import path
 
 from core import views as core_views
 from clases import views as clases_views
+from contacto import views as contacto_views
+from instructores import views as instructores_views
+from servicios import views as servicios_views
 
 urlpatterns = [
     path('',core_views.inicio, name='inicio'),
     path('clases/',clases_views.clases, name='clases'),
-    path('servicios/',core_views.servicios, name='servicios'),
-    path('instructores/',core_views.instructores, name='instructores'),
-    path('contacto/',core_views.contacto, name='contacto'),
+    path('servicios/',servicios_views.servicios, name='servicios'),
+    path('instructores/',instructores_views.instructores, name='instructores'),
+    path('contacto/',contacto_views.contacto, name='contacto'),
     path('admin/', admin.site.urls),
 ]
