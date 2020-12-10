@@ -5,9 +5,6 @@ from django.shortcuts import render
 def inicio(request):
     return render(request,"core/inicio.html")
 
-def clases(request):
-    return render(request,"core/clases.html")
-
 def servicios(request):
     return render(request,"core/servicios.html")
 
