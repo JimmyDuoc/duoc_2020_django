@@ -22,6 +22,8 @@ from contacto import views as contacto_views
 from instructores import views as instructores_views
 from servicios import views as servicios_views
 
+from django.conf import settings
+
 urlpatterns = [
     path('',core_views.inicio, name='inicio'),
     path('clases/',clases_views.clases, name='clases'),
@@ -30,3 +32,7 @@ urlpatterns = [
     path('contacto/',contacto_views.contacto, name='contacto'),
     path('admin/', admin.site.urls),
 ]
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
