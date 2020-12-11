@@ -10,42 +10,37 @@
 
 {% block contenido %}
     <section class="vc_row pt-120 pb-100">
-				<div class="container">
-					<div class="row">
+		<div class="container">
+			<div class="row">
+				<div class="lqd-column col-md-8 col-md-offset-2">
+					<header class="fancy-title mb-45 text-center mb-70">
+						<h2 class="text-uppercase ltr-sp-0">ENTRENADORES EXPERTOS</h2>
+						<p>Todas las clases son adecuadas tanto para hombres como para mujeres y todos los niveles de condición física son bienvenidos.</p>
+					</header>
+				</div><!-- /.lqd-column col-md-8 col-md-offset-2 -->
 
-						<div class="lqd-column col-md-8 col-md-offset-2">
+				{% for instructor in instructores %}
+					<div class="lqd-column col-md-4 text-center mb-30">
 
-							<header class="fancy-title mb-45 text-center mb-70">
-								<h2 class="text-uppercase ltr-sp-0">ENTRENADORES EXPERTOS</h2>
-								<p>Todas las clases son adecuadas tanto para hombres como para mujeres y todos los niveles de condición física son bienvenidos.</p>
-							</header>
+						<figure>
+							<img src="{{instructor.image.url}}">
+						</figure>
 
-						</div><!-- /.lqd-column col-md-8 col-md-offset-2 -->
+						<h3 class="mb-2">{{instructor.name}}</h3>
+						<h6 class="mt-0 mb-20 font-size-12 text-uppercase ltr-sp-1 text-primary">{{instructor.specialty}}</h6>
 
+						<p class="mb-30">{{instructor.experience}}</p>
 
-						{% for instructor in instructores %}
-							<div class="lqd-column col-md-4 text-center mb-30">
+						<ul class="social-icon social-icon-md">
+							<li><a href="{{instructor.facebook}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="{{instructor.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="{{instructor.instagram}}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						</ul>
 
-								<figure>
-									<img src="{{instructor.image.url}}">
-								</figure>
+					</div><!-- /.lqd-column col-md-4 -->
+				{% endfor %}
 
-								<h3 class="mb-2">{{instructor.name}}</h3>
-								<h6 class="mt-0 mb-20 font-size-12 text-uppercase ltr-sp-1 text-primary">{{instructor.specialty}}</h6>
-
-								<p class="mb-30">{{instructor.experience}}</p>
-
-								<ul class="social-icon social-icon-md">
-									<li><a href="{{instructor.facebook}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="{{instructor.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="{{instructor.instagram}}" target="_blank"><i class="fa fa-instagram"></i></a></li>
-								</ul>
-
-							</div><!-- /.lqd-column col-md-4 -->
-						{% endfor %}
-
-
-					</div><!-- /.row -->
-				</div><!-- /.container -->
-			</section>
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
 {% endblock %}
