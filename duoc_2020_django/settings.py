@@ -125,5 +125,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Media Config
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+# SMTP Config
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mail.rhinnoit.cloud'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'django@rhinnoit.cloud'
+EMAIL_HOST_PASSWORD = 'uU2X8sDqZIkbAOK+Tw=='
+EMAIL_USE_TLS = True
