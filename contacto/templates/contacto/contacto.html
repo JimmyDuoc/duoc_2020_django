@@ -19,13 +19,35 @@
 								<div class="lqd-column col-md-8 px-md-5 pt-30 pb-30">
 									<h3 class="font-size-24 lh-165 text-uppercase mr-md-9 pr-md-9">Solicite su pase de acceso completo gratuito de 7 días para fitness</h3>
 									<div class="contact-form contact-form-inputs-underlined contact-form-button-block">
+
+										{% if 'OK' in request.GET %}
+											<br><div class="alert alert-success" role="alert">Su solicitud ha sido ingresada y enviada correctamente.</div><br>
+										{% endif %}
+										{% if 'FAIL' in request.GET %}
+										<br><div class="alert alert-danger" role="alert">Su solicitud tuvo problemas. Intente nuevamente.</div><br>
+										{% endif %}
 										<form action="" method="POST">
 											{% csrf_token %}
-											{{form}}
-											<input type="submit" value="Enviar">
+											<div class="row">
+												<div class="col-md-6">
+													{{form.first_name}}
+												</div><!-- /.col-md-6 -->
+												<div class="col-md-6">
+													{{form.last_name}}
+												</div><!-- /.col-md-6 -->
+												<div class="col-md-6">
+													{{form.email}}
+												</div><!-- /.col-md-6 -->
+												<div class="col-md-6">
+													{{form.phone}}
+												</div><!-- /.col-md-6 -->
+												<div class="col-md-12 mt-25">
+													<input class="font-size-16 font-weight-bold ltr-sp-1 text-uppercase bg-gradient-primary-lr border-none" type="submit" value="Enviar">
+												</div><!-- /.col-md-12 -->
+											</div><!-- /.row -->
 										</form>
 									</div><!-- /.contact-form -->
-									<p>Respetamos su privacidad y no toleramos el spam y nunca venderemos, alquilaremos, alquilaremos o regalaremos su información a terceros.</p>
+									<p>Respetamos su privacidad, no toleramos el spam y nunca venderemos, alquilaremos o regalaremos su información a terceros.</p>
 								</div><!-- /.lqd-column col-md-8 -->
 							</div>
 						</div>
