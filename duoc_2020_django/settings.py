@@ -132,9 +132,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 # SMTP Config
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.rhinnoit.cloud'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'django@rhinnoit.cloud'
-EMAIL_HOST_PASSWORD = 'uU2X8sDqZIkbAOK+Tw=='
-EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = '43c0d11e184e21'
+EMAIL_HOST_PASSWORD = '17e00a443a3378'
+EMAIL_PORT = '2525'
