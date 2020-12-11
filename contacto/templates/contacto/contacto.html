@@ -19,8 +19,11 @@
 								<div class="lqd-column col-md-8 px-md-5 pt-30 pb-30">
 									<h3 class="font-size-24 lh-165 text-uppercase mr-md-9 pr-md-9">Solicite su pase de acceso completo gratuito de 7 días para fitness</h3>
 									<div class="contact-form contact-form-inputs-underlined contact-form-button-block">
-										ACA VA EL FORM
-										<div class="contact-form-result hidden"></div><!-- /.contact-form-result -->
+										<form action="" method="POST">
+											{% csrf_token %}
+											{{form}}
+											<input type="submit" value="Enviar">
+										</form>
 									</div><!-- /.contact-form -->
 									<p>Respetamos su privacidad y no toleramos el spam y nunca venderemos, alquilaremos, alquilaremos o regalaremos su información a terceros.</p>
 								</div><!-- /.lqd-column col-md-8 -->
