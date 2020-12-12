@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from django.urls import reverse
 from .forms import ContactForm
+from .models import Contacto
 from django.core.mail import EmailMessage
 
 # Create your views here.
@@ -15,8 +16,8 @@ def contacto(request):
             last_name = request.POST.get('last_name','')
             email = request.POST.get('email','')
             phone = request.POST.get('phone','')
-
-            #ContactForm = form.save()
+            
+            caca = Contacto.objects.create(first_name=first_name,last_name=last_name,email=email,phone=phone)
 
             email = EmailMessage(
                 "DUOC GYM - Contacto {} {}".format(first_name,last_name),
