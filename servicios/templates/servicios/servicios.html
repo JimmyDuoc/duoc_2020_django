@@ -9,46 +9,35 @@
 {% block fraseHeader %}Entrenamiento funcional, plan nutricional, sauna y relajación{% endblock %}
 
 {% block contenido %}
+	<section class="vc_row pt-90 pb-30 bg-gray">
+		<div class="container">
+			<div class="row">
+				<div class="lqd-column col-md-8 col-md-offset-2 col-xs-12">
+					<header class="fancy-title mb-45 text-center mb-70">
+						<h2 class="text-uppercase ltr-sp-0">POR QUÉ ELEGIR DUOCGYM</h2>
+						<p>Fomentamos la participación familiar, la diversión, la aptitud física y la alfabetización.</p>
+					</header>
+				</div><!-- /.lqd-column col-md-8 col-md-offset-2 -->
+			</div><!-- /.row -->
+			<div class="row d-flex flex-wrap">
 
-<section class="vc_row pt-90 pb-30 bg-gray">
+				{% for servicio in servicios %}
+					<div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-md-3 mb-35">
 
-				<div class="container">
+						<div class="iconbox iconbox-heading-xs px-md-4" data-plugin-options='{"color":"#f5634b:#fe9418"}'>
+							<div class="iconbox-icon-wrap">
+							<i style="color:#f97030;" class="fa {{servicio.icon}}" aria-hidden="true"></i>
+							</div><!-- /.iconbox-icon-wrap -->
+							<div class="contents">
+								<h3 class="font-weight-bold">{{servicio.title}}</h3>
+								<p>{{servicio.description}}</p>
+							</div><!-- /.contents -->
+						</div><!-- /.iconbox -->
 
-					<div class="row">
+					</div><!-- /.lqd-column col-md-4 -->
+				{% endfor %}
 
-						<div class="lqd-column col-md-8 col-md-offset-2 col-xs-12">
-
-							<header class="fancy-title mb-45 text-center mb-70">
-								<h2 class="text-uppercase ltr-sp-0">POR QUÉ ELEGIR DUOCGYM</h2>
-								<p>Fomentamos la participación familiar, la diversión, la aptitud física y la alfabetización.</p>
-							</header>
-
-						</div><!-- /.lqd-column col-md-8 col-md-offset-2 -->
-
-					</div><!-- /.row -->
-
-					<div class="row d-flex flex-wrap">
-
-
-						{% for servicio in servicios %}
-							<div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-md-3 mb-35">
-
-								<div class="iconbox iconbox-heading-xs px-md-4" data-plugin-options='{"color":"#f5634b:#fe9418"}'>
-									<div class="iconbox-icon-wrap">
-									<i style="color:#f97030;" class="fa {{servicio.icon}}" aria-hidden="true"></i>
-									</div><!-- /.iconbox-icon-wrap -->
-									<div class="contents">
-										<h3 class="font-weight-bold">{{servicio.title}}</h3>
-										<p>{{servicio.description}}</p>
-									</div><!-- /.contents -->
-								</div><!-- /.iconbox -->
-
-							</div><!-- /.lqd-column col-md-4 -->
-						{% endfor %}
-
-
-
-					</div><!-- /.row -->
-				</div><!-- /.container -->
-			</section>
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
 {% endblock %}
