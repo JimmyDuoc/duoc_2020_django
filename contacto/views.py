@@ -16,6 +16,8 @@ def contacto(request):
             email = request.POST.get('email','')
             phone = request.POST.get('phone','')
 
+            #ContactForm = form.save()
+
             email = EmailMessage(
                 "DUOC GYM - Contacto {} {}".format(first_name,last_name),
                 "Nombre: {} {}\nCorreo Electrónico: {}\nTeléfono: {}".format(first_name,last_name,email,phone),
@@ -23,13 +25,10 @@ def contacto(request):
                 ["contacto@duocgym.cl"],
                 reply_to=[email]
             )
-            email.send()
-
-
-            #ContactForm = form.save()
-
-            return redirect(reverse('contacto') + "?OK")
-        else:
-            return redirect(reverse('contacto') + "?FAIL")
+            try:
+                email.send()
+                return redirect(reverse('contacto') + "?OK")
+            except:
+                return redirect(reverse('contacto') + "?FAIL") 
 
     return render(request,"contacto/contacto.html",{'form':contact_form})
